@@ -1,0 +1,133 @@
+@font-face {
+    font-family: odin;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --default-margin: 20px;
+}
+
+body {
+    display: flex;
+    flex: 1 0 100vw;
+    align-items: stretch;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.decorate {
+    position: relative;
+    flex-grow: 0;
+}
+
+.logo-card {
+    font-family: odin, sans-serif;
+    font-size: 4rem;
+    color: white;
+
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    background-color: rgb(0,0,0,0.6);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.credits {
+    color: white;
+    text-align: center;
+
+    position: absolute;
+    width: 100%;
+    bottom: 2vh;
+}
+
+img[src="./images/bg.avif"] {
+    height: 100vh;
+    width: auto;
+}
+
+img[src="./images/odin-lined.png"] {
+    height: 15vh;
+    width: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+    justify-content: center;
+    align-items: flex-start;
+    background-color: aquamarine;
+    gap: 3vh;
+}
+
+.content p:first-of-type {
+    max-inline-size: 66ch;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.content>p {
+    padding-left: var(--default-margin);
+}
+
+form {
+    background-color: white;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 32px;
+    box-shadow: 0 2px 1px lightblue;
+}
+
+h2 {
+    margin-top: var(--default-margin);
+}
+
+form>* {
+    margin-left: var(--default-margin);
+}
+
+input {
+    margin: 0 48px 12px 0;
+    border: 3px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:invalid {
+    border-color:red;
+}
+
+input:focus {
+    border-color:blue;
+    box-shadow: 0 2px lightblue;
+}
+
+button {
+    background-color: #596D48;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    padding: 12px 36px;
+    margin-left: var(--default-margin);
+    border-radius: 12px;
+}
+
+.credits a {
+    color: white;
+}
+
+.content p a {
+    color: #596D48;
+}

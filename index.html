@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="decorate"> 
+        <img src="./images/bg.avif"/>
+        <div class="logo-card">  
+            <img src="./images/odin-lined.png"/>
+            Odin
+        </div>
+        <p class="credits"> Photo by <a href="unsplash.com/@haliewestphoto">Halie West</a> on <a href="unsplash.com">Unsplash</a></p>
+    </div>
+
+    <div class="content">
+        <p> This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</br></br>You <i>know</i> you want to.</p>
+        <form action="#" method="get">
+            <h2> Let's do this! </h2>
+            <div class="form">
+                <div class="form_content"> 
+                    <label for="first_name">First Name:</label></br>
+                    <input type="text" placeholder="John" id="first_name" name="first_name"/></br>
+                            
+                    <label for="email">Email:</label></br>
+                    <input type="email" placeholder="example@gmail.com" name="email" id="email"/></br>
+
+                    <label for="password">Password:</label></br>
+                    <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/>
+                </div>
+
+                <div class="form_content">
+                    <label for="last_name">Last Name:</label></br>
+                    <input type="text" placeholder="Doe" id="last_name" name="last_name"/></br>
+
+                    <label for="phone_number">Phone number:</label></br>
+                    <input type="number" placeholder="635812946" id="phone_number" name="phone_number"/></br>
+    
+                    <label for="confirm_password">Confirm password:</label></br>
+                    <input type="password" id="confirm_password" name="confirm_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/>
+                </div>
+            </div>
+        </form> 
+        <button type="submit"> Create account </button>
+        <p> Already have an account? <a href=".">Log in</a></p>
+    </div>
+</body>
+</html>
